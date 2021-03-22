@@ -36,13 +36,6 @@ body{
     margin-top: 48px;
 }
 
-.carousel-indicators{
-    border-radius: 20px;
-    position: absolute;
-    bottom: -28px;
-    background-color: #4c4dfa;
-}
-
 .logo_placeholder img{
     display: block;
     margin-left: auto;
@@ -51,7 +44,15 @@ body{
     border-radius: 30%;
 }
 
+.logo_placeholder h1{
+    color:#4c4dfa;
+}
+/* Navbar*/
 
+.navbar .nav-item:hover .dropdown-menu{
+    position:absolute;
+    display: block;
+}
 
 /* CAROUSEL */
 

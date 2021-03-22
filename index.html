@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
     <script src="https://use.fontawesome.com/f7caa58623.js"></script>
@@ -34,14 +34,13 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Dashboard</a>
+                        <a class="nav-link disabled user-only" data-bs-toggle="popover" title="Popover title" data-bs-content="Você precisa estar logado para usar este recurso..." href="#" tabindex="-1" aria-disabled="true">Dashboard</a>
                     </li>
                     </ul>
                     <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
-                </div>
                 </div>
             </nav>
     </header>
@@ -66,22 +65,22 @@
                 <a class></a>
               </div>
               <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                  <img src="./img/carousel_bg1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-item active" data-bs-interval="2000">
+                  <img src="./img/carousel_bg1.jpg" class="d-block w-100" style="width: 400px;height:400px" alt="...">
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
-                  <img src="./img/carousel_bg2.jpg" class="d-block w-100" alt="...">
+                  <img src="./img/carousel_bg2.jpg" class="d-block w-100" style="width: 400px;height:400px" alt="...">
                 </div>
-                <div class="carousel-item">
-                  <img src="./img/carousel_bg3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="./img/carousel_bg3.jpg" class="d-block w-100" style="width: 400px;height:400px" alt="...">
                 </div>
               </div>
               <a class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="fa fa-chevron-left" style="text-decoration: none;" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </a>
               <a class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="fa fa-chevron-right"  style="text-decoration: none;" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </a>
             </div>
@@ -90,6 +89,39 @@
               <hr>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam convallis enim non egestas. Fusce tincidunt molestie erat, quis tincidunt turpis mattis a. Cras non quam sed leo tristique tempus. Pellentesque pulvinar varius neque, vel convallis orci tincidunt quis. Donec ut auctor velit. Integer facilisis iaculis varius. Cras vestibulum erat elit, ac vehicula nibh cursus in. Sed quis turpis mi. Pellentesque at massa nec nulla ornare mollis vitae et libero. Maecenas quis imperdiet enim. Donec placerat iaculis odio, ac rutrum tortor laoreet id. Nam quis turpis metus. Nulla ut faucibus ipsum, ut vulputate mi. Mauris ante eros, feugiat eu risus ut, gravida condimentum nunc. Ut ac tincidunt sapien.
             </p>
+          </div>
+        </div>
+        <br>
+        <div class="content container">
+          <h1>Eventos</h1>
+          <hr>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
           </div>
         </div>
     </div>
@@ -112,42 +144,47 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-      
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
         <script>
             $(document).ready(function(){
                     $(".carousel-indicators-group a").click(function(){
-                        $(".carousel-indicators-group .active").removeClass("active")
+                        $(".carousel-indicators-group a").removeClass("active")
+                        $(".carousel-item").removeClass("active")
                         $(this).addClass("active")
-                    })
-                    $(".carousel-control-prev").click(function(){
-                        var buttons = document.querySelectorAll(".carousel-indicators-group")
-                        for(var i=0;i < buttons.length;i++){
-                            if(buttons[i].classList.contains("active")){
-                             
-                                if(i==0)i=2;
-                                buttons[i].removeClass("active")
-                                img[i].removeClass("active")
-                                buttons[i-1].addClass("active")
-                                img[i-1].addClass("active")
-                                i = buttons.length
-                            }
-                        }
+
+                        
+                        var carousel = document.getElementsByClassName('carousel-item')
+                        carousel[$(this).index()].classList.add('active')
                     })
                     $(".carousel-control-next").click(function(){
-                      var buttons = document.querySelectorAll(".carousel-indicators-group")
-                      var img = document.querySelectorAll(".carousel-item")
-                        for(var i=0;i < buttons.length;i++){
-                            if(buttons[i].classList.contains("active")){
-                                if(i==2)i=0;
-                                buttons[i].removeClass("active")
-                                img[i].removeClass("active")
-                                buttons[i+1].addClass("active")
-                                img[i+1].addClass("active")
-                                i = buttons.length
-                            }
+                      var buttons =  document.querySelectorAll('.carousel-indicators-group a')
+                      var carousel = document.getElementsByClassName('carousel-item')
+
+                      for(var i=0;i<buttons.length-1;i++){
+                        if(buttons[i].classList.contains('active')){
+                          buttons[i].classList.remove('active')
+                          carousel[i].classList.remove('active')
+                          buttons[i+1].classList.add('active')
+                          carousel[i+1].classList.add('active')
+                          return;
                         }
+                      }
                     })
-                    
+                    $(".carousel-control-prev").click(function(){
+                      var buttons =  document.querySelectorAll('.carousel-indicators-group a')
+                      var carousel = document.getElementsByClassName('carousel-item')
+
+                      for(var i=buttons.length-1;i>0;i--){
+                        if(buttons[i].classList.contains('active')){
+                          buttons[i].classList.remove('active')
+                          carousel[i].classList.remove('active')
+                          buttons[i-1].classList.add('active')
+                          carousel[i-1].classList.add('active')
+                          return;
+                        }
+                      }
+                    })
                 }
             )
         </script>
