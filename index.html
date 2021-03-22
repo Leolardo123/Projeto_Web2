@@ -165,9 +165,17 @@
                         if(buttons[i].classList.contains('active')){
                           buttons[i].classList.remove('active')
                           carousel[i].classList.remove('active')
+
                           buttons[i+1].classList.add('active')
                           carousel[i+1].classList.add('active')
                           return;
+                        }
+                        if(i+1==buttons.length-1){
+                          buttons[buttons.length-1].classList.remove('active')
+                          carousel[buttons.length-1].classList.remove('active')
+
+                          buttons[0].classList.add('active')
+                          carousel[0].classList.add('active')
                         }
                       }
                     })
@@ -182,6 +190,13 @@
                           buttons[i-1].classList.add('active')
                           carousel[i-1].classList.add('active')
                           return;
+                        }
+                        if((i-1)==0){
+                          buttons[0].classList.remove('active')
+                          carousel[0].classList.remove('active')
+
+                          buttons[buttons.length-1].classList.add('active')
+                          carousel[buttons.length-1].classList.add('active')
                         }
                       }
                     })
