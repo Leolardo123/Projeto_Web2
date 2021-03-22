@@ -1,18 +1,15 @@
 body{
-    background-image: url(../img/index_bg1.jpg);
+    background-image: url(../img/index_page_bg.jpg);
     background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
-.navbar{
-    position: fixed;
-    width: auto;
-    height: 3rem;
-    top:0%;
-    left:9%;
-    right: 9%;
+
+.indexPageCarousel{
+    width: 800px;
+    height:380px;
 }
-.nav-item:hover .dropdown-menu{
-    display: block;
-}
+
 
 .company-presentation{
     margin-top: 7%;
@@ -26,14 +23,24 @@ body{
     margin-top: 8px;
     text-align: center;
 }
-.carouselMainPage{
 
-}
 .content{
     padding: 20px;
     border-radius: 20px;
-    background-color: white;
+    background-color: rgb(247, 247, 247);
+    border:1px solid rgba(0, 0, 0, 0.021);
     text-align: justify;
+}
+
+.content p{
+    margin-top: 48px;
+}
+
+.carousel-indicators{
+    border-radius: 20px;
+    position: absolute;
+    bottom: -28px;
+    background-color: #4c4dfa;
 }
 
 .logo_placeholder img{
@@ -43,3 +50,97 @@ body{
     width: 200px;
     border-radius: 30%;
 }
+
+
+
+/* CAROUSEL */
+
+.carousel-indicators-group{
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+    list-style: none;
+}
+
+.carousel-indicators-group a{
+    margin: 0px 5px;
+    height: 11px;
+    border-radius: 20px;
+    width: 11px;
+    background: #a1a1a1;
+}
+
+.carousel-indicators-group a:hover{
+    background: #4c4dfa;
+}
+
+.carousel-indicators-group .active{
+    background: #4c4dfa;
+}
+
+#carouselFatecEventos .carousel-control-prev-icon{
+    position:absolute;
+    opacity:0.0;
+    right:150px;
+    
+}
+
+#carouselFatecEventos:hover  .carousel-control-prev-icon{
+    right:50px;
+    opacity:1.0;
+    transition:1s;
+}
+
+#carouselFatecEventos .carousel-control-next-icon{
+    position:absolute;
+    opacity:0.0;
+    left:150px;
+    
+}
+
+#carouselFatecEventos:hover  .carousel-control-next-icon{
+    left:50px;
+    opacity:1.0;
+    transition:1s;
+}
+
+/* FOOTER */
+.index_footer{
+    border-top-left-radius:  20px;
+    border-top-right-radius: 20px;
+    padding-top: 15px;
+    padding:8px;
+    margin-top:5%;
+    background-color: #4c4dfa;
+    display:grid;
+    grid-template-areas: 
+     col1 col2 col3;
+    grid-template-columns: 4fr 2fr 2fr;
+}
+
+.index_footer a{
+
+    color: white;
+    text-decoration: none;
+}
+
+.index_footer > div{
+    border-right: 1px solid rgb(156, 156, 156);
+}
+
+.index_footer > div a:hover{
+    color:yellow;
+}
+
+.index_footer :last-child{
+    border-right: none;
+}
+
